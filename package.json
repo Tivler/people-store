@@ -6,12 +6,12 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tivler/people-store.git"
   },
-  "author": "",
+  "author": "Tivler",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Tivler/people-store/issues"
