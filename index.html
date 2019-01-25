@@ -6,21 +6,23 @@
 
 <body>
 	<main>
-		<div class="logo-section">
-	<img class="logo" src="https://www.happyceliac.com/wp-content/uploads/2018/02/placeholder-image.png">
-		</div>
-				
-		<h3></h3>
-				
-		<div class="form-section">
-			<form>
-			FirstName:<input type="text" id="FirstNameField" name="FirstName">
-			LastName:<input type="text"	id="LastNameField" name="LastName">	
-			Email:<input type="Text" id="EmailField" name="Email">
-			</form>
-			<button id="SubmitButton">Submit:</button>
-	</div>
-	
+		<div class="logo-section"></div>
+
+
+			<div class="form-box">
+				<div class="form-section">
+					<form>
+						<Fieldset>
+							<legend>Sign Up</legend>
+								First Name: <input type="text" id="FirstNameField" placeholder="First Name" name="FirstName" required>
+								Last Name: <input type="text" id="LastNameField" placeholder="Last Name" name="LastName" required>
+								User Name: <input type="text" id="UserNameField" placeholder="Username" name="Username" required>	
+								Email: <input type="email" id="EmailField" placeholder="Email Address" name="Email" required>
+								<button id="SubmitButton">Submit:</button>
+						</Fieldset>			
+					</form>
+				</div>
+			</div>
 	</main>
 	<script src="app.js"></script>
 
