@@ -10,8 +10,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
 }
 
 .form {
@@ -35,6 +33,10 @@
   background-color: aliceblue;
   z-index: 1;
   border-radius: 5px;
+}
+
+.form-signup .form-title {
+  margin-top: 25px;
 }
 
 .form-signup .form-control {

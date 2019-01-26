@@ -12,8 +12,6 @@
         background-repeat: no-repeat;
         object-fit: cover;
         position: absolute;
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
     }
     
 }
@@ -37,6 +35,10 @@
     background-color: aliceblue;
     z-index: 1;
     border-radius: 5px;
+
+    .form-title {
+        margin-top: 25px;
+    }
 
     .form-control {
         position: relative;
