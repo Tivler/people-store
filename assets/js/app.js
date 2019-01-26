@@ -3,7 +3,6 @@
 const firstName = document.getElementById('inputFirstName');
 const lastName = document.getElementById('inputLastName');
 const email = document.getElementById('inputEmail');
-const checkbox = document.getElementById('checkbox');
 const submitButton = document.getElementById('submitButton');
 
 
