@@ -35,6 +35,13 @@
   border-radius: 5px;
 }
 
+.form-signup .form-logo {
+  height: 80px;
+  width: 120px;
+  margin-bottom: 0px !important;
+  margin-top: 16px;
+}
+
 .form-signup .form-title {
   margin-top: 25px;
 }
