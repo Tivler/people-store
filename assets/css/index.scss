@@ -1,24 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body {
 
-    .main_head {
+.main-head {
 
 
-        .main_head-image {
-            height: 100vh;
-            width: 100vw;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            position: absolute;
-            filter: blur(3px);
-            -webkit-filter: blur(3px);
-        }
-    
+    .main-head-image {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        position: absolute;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
     }
     
 }
+
+.form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    filter: drop-shadow(-2px 2px 10px #666666);
+}
+
+.form-signup {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    background-color: aliceblue;
+    z-index: 1;
+    border-radius: 5px;
+
+    .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #inputFirstName {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #inputLastName {
+        margin-bottom: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #inputEmail {
+        margin-bottom: 25px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .form-copyright {
+        margin-top: 25px !important;
+    }
+
+}
+
