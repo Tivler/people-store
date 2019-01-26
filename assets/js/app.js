@@ -1,16 +1,24 @@
-const FirstName = document.getElementById('FirstNameField');
-const LastName = document.getElementById('LastNameField');
-const Email = document.getElementById('EmailField');
-const Submit = document.getElementById('SubmitButton');
 
+
+const firstName = document.getElementById('inputFirstName');
+const lastName = document.getElementById('inputLastName');
+const email = document.getElementById('inputEmail');
+const checkbox = document.getElementById('checkbox');
+const submitButton = document.getElementById('submitButton');
+
+
+
+
+/*
 //: You could probably rename the variable above to be a little bit more descriptive like: submitBtn, firstNameField... etc.
 
-Submit.addEventListener('click' , function(){
-    let fName = FirstName.value,
-        lName = LastName.value,
-        userEmail = Email.value;
+Submit.addEventListener('click', function () {
+    let fName = firstName.value,
+        lName = lastName.value,
+        userEmail = email.value;
 
-    // log the value of what has been typed into each field... 
+    // log the value of what has been typed into each field...
     console.log("SubmitButtonClicked");
     console.log('fName:', fName);
 });
+ */
