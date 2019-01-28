@@ -1,0 +1,19 @@
+{
+  "name": "people-store",
+  "version": "1.0.0",
+  "description": "The People Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tivler/people-store.git"
+  },
+  "author": "Tivler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tivler/people-store/issues"
+  },
+  "homepage": "https://github.com/Tivler/people-store#readme"
+}
