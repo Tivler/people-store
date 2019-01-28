@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tivler/people-store/issues"
   },
-  "homepage": "https://github.com/Tivler/people-store#readme"
+  "homepage": "https://github.com/Tivler/people-store#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0"
+  }
 }
