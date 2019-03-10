@@ -6,8 +6,22 @@ const firstNameField = document.querySelector('.first-name');
 const lasttNameField = document.querySelector('.last-name');
 const emailField     = document.querySelector('.email');
 
-function sendData(newUser) {
-    console.log('Creating new user:', newUser);
+
+function sendData(data) {
+
+    fetch("http://localhost:9090/api/v1/user", {
+        method: "post",
+        headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+    //make sure to serialize your JSON body
+    body: JSON.stringify(data)
+  })
+
+   .then((response) => { 
+        console.log('Shit back from API for confirmation');
+  });
 }
 
 function submitForm(e) {
@@ -20,5 +34,6 @@ function submitForm(e) {
     };
 
     console.log('new user:', newUser);
+    sendData(newUser);
 
 }
