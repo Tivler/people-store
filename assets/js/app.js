@@ -1,13 +1,18 @@
 // Goal: We want to extract input from our people form then the user submits it.
-// When the user submits the form we want to create a JavaScript object like the following firstName: 'Tim', lastName: 'McKyer', email: 'tim@tim.{com'}
 
 const signUpForm     = document.querySelector('.form-signup');
 const firstNameField = document.querySelector('.first-name');
 const lasttNameField = document.querySelector('.last-name');
 const emailField     = document.querySelector('.email');
 
+// Page lifecycle events
+window.onload = () => {
+    console.log('App loaded..');
+    signUpForm.classList.add('animated', 'bounceInLeft');
+};
 
 function sendData(data) {
+    console.log('Creating user:', data);
 
     fetch("http://localhost:9090/api/v1/user", {
         method: "post",
@@ -15,7 +20,6 @@ function sendData(data) {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },
-    //make sure to serialize your JSON body
     body: JSON.stringify(data)
   })
 
@@ -33,7 +37,11 @@ function submitForm(e) {
         email: emailField.value
     };
 
-    console.log('new user:', newUser);
     sendData(newUser);
 
+    setTimeout(() => {
+        console.log('Form Submitted');
+        signUpForm.classList.add('animated', 'bounceOutRight');
+        alert('Welcome To The People Store!');
+    }, 500);
 }

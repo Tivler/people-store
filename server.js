@@ -14,7 +14,6 @@ app.use(cors());
 
 // API's
 // Endpoints
-// Where the frontend can send data to the backend
 
 // POST request: http://localhost:9090/api/v1/user
 app.post('/api/v1/user/', (request, response) => {
